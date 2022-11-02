@@ -14,26 +14,26 @@ class computer{
 
 
 computer(){
-this->manufacturer="default manufacturer";
-this->price=0;
-this->storage=0;
-this->type="PC";
+    this->manufacturer="default manufacturer";
+    this->price=0;
+    this->storage=0;
+    this->type="PC";
 
 
 }
 
 computer(string man){
-this->manufacturer=man;
-this->price=0;
-this->storage=0;
-this->type="PC";
+    this->manufacturer=man;
+    this->price=0;
+    this->storage=0;
+    this->type="PC";
 
 }
 computer(string man, string type, int price, int storage){
-this->manufacturer=man;
-this->price=price;
-this->storage=storage;
-this->type=type;
+    this->manufacturer=man;
+    this->price=price;
+    this->storage=storage;
+    this->type=type;
 
 }
 
@@ -74,22 +74,23 @@ this->price=newprice;
 
 int main()
 {
-    computer comp1("hp","PC",1000,500);
-
+computer comp1("hp","PC",1000,500);
+computer comp2;
+vase vase1;
+    
 cout<<comp1.price<<endl;
-    computer comp2;
-    cout<< comp2.manufacturer<<endl;
+cout<< comp2.manufacturer<<endl;
 
 
 
-    vase vase1;
-    vase1.year=1250;
-    vase1.price=400;
-    vase1.location="london";
-    vase1.countryorigin="greece";
-vase1.age();
-    cout<<vase1.location<<endl;
-    vase1.move("paris");
-    cout<<vase1.location<<endl;
-    return 0;
+vase1.year=1250;
+vase1.price=400;
+vase1.location="london";
+vase1.countryorigin="greece";
+cout<<vase1.age();
+    
+cout<<vase1.location<<endl;
+vase1.move("paris");
+cout<<vase1.location<<endl;
+return 0;
 }
