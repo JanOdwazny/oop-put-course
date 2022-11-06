@@ -25,20 +25,20 @@ class actor{
     string nationality;
 public:
     actor(){
-    this->name="name";
-    this->surname="surname";
-    this->gender="gender";
-    this->age=0;
-    this->nationality="nationality";
+        this->name="name";
+        this->surname="surname";
+        this->gender="gender";
+        this->age=0;
+        this->nationality="nationality";
 
 
     }
     actor(string name ,string surname,string gender, int age, string nationality){
-    this->name=name;
-    this->surname=surname;
-    this->gender=gender;
-    this->age=age;
-    this->nationality=nationality;
+        this->name=name;
+        this->surname=surname;
+        this->gender=gender;
+        this->age=age;
+        this->nationality=nationality;
 
 
     }
@@ -53,10 +53,10 @@ class movie{
 
 
     movie(int dur, string title, int year, moviegenre genres[],actor mainroles[]){
-    this->duration=dur;
-    this->title=title;
-    this->genre=genres;
-    this->mainroles=mainroles;
+        this->duration=dur;
+        this->title=title;
+        this->genre=genres;
+        this->mainroles=mainroles;
 
 
     }
