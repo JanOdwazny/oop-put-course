@@ -17,7 +17,7 @@ class car{
     string brand;
     string model;
     int year;
-    int isowned;
+    bool isowned;
 };
 class human {
 public:
