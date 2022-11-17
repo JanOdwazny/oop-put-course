@@ -3,20 +3,20 @@
 using namespace std;
 
 
-class moviegenre{
+class MovieGenre{
     public:
     string gen;
-    moviegenre(){
+    MovieGenre(){
     this->gen="gen";
 
     }
 
 
-    moviegenre(string gen){
+    MovieGenre(string gen){
     this->gen=gen;
     }
 };
-class actor{
+class Actor{
 
     string name;
     string surname;
@@ -24,7 +24,7 @@ class actor{
     int age;
     string nationality;
 public:
-    actor(){
+    Actor(){
         this->name="name";
         this->surname="surname";
         this->gender="gender";
@@ -33,7 +33,7 @@ public:
 
 
     }
-    actor(string name ,string surname,string gender, int age, string nationality){
+    Actor(string name ,string surname,string gender, int age, string nationality){
         this->name=name;
         this->surname=surname;
         this->gender=gender;
@@ -47,16 +47,16 @@ public:
 class movie{
     int duration;
     string title;
-    int productionyear;
-    moviegenre genre[3];
-    actor mainroles[5];
+    int ProductionYear;
+    MovieGenre genre[3];
+    Actor MainRoles[5];
 
 
-    movie(int dur, string title, int year, moviegenre genres[],actor mainroles[]){
+    movie(int dur, string title, int year, MovieGenre genres[],Actor MainRoles[]){
         this->duration=dur;
         this->title=title;
         this->genre=genres;
-        this->mainroles=mainroles;
+        this->MainRoles=MainRoles;
 
 
     }
@@ -64,11 +64,11 @@ void printdata(){
     cout<<"title: "<<this->title<<endl;
     cout<<"staring: ";
     for(int i=0; i<5;i++){
-        cout<<this->mainroles[i].name<<" "<<this->mainroles[i].surname;
+        cout<<this->MainRoles[i].name<<" "<<this->MainRoles[i].surname;
 
     }
     cout<<endl;
-    cout<<"year: "<<this->productionyear<<endl;
+    cout<<"year: "<<this->ProductionYear<<endl;
     cout<<"duration: "<<this->duration<<endl;
 }
 
