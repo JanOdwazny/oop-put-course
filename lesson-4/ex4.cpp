@@ -7,15 +7,15 @@ class TotalWeight{
     public:
     virtual int CombinedWeight() = 0;
     
-    int NumberOfPieces;
-    int Weight;
+   
 };
 
 class sack: public TotalWeight{
     public:
    
-   
-     int CombinedWeight(){
+    int NumberOfPieces;
+    int Weight;
+    int CombinedWeight(){
 
         return(NumberOfPieces*Weight);
     };
