@@ -1,6 +1,6 @@
 package oop.put.shapes;
 import oop.put.utils.Gift;
-import oop.put.utils.*;
+
 
 import java.io.IOException;
 
@@ -23,7 +23,7 @@ public class Cylinder extends Gift {
     public double calculatePaperRequirement() throws IOException {
         double ans1=2*Math.PI*radius * 1.05;
         double ans2= height+(2*radius) * 1.05;
-        int err=0;
+        
         if(ans1>=100 &&ans2 >=100){
             System.out.println("the gift won't fit the standard packing paper");
             return -1;
